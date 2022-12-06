@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data">
+                    <div class="card" >
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">PatientId: {{i.patientid}}</li>
+                          <li class="list-group-item">Name: {{i.patientname}}</li>
+                          <li class="list-group-item">Address: {{i.address}}</li>
+                          <li class="list-group-item">Phone: {{i.phone}}</li>
+                          <li class="list-group-item">Appointment: {{i.appointment}}</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
