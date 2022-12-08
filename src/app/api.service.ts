@@ -16,4 +16,14 @@ export class ApiService {
   {
     return this.http.get("http://localhost:8000/view")
   }
+
+  searchPatient=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8000/search",dataToSend)
+  }
+
+  deletePatient=(dataToDelete:any)=>
+  {
+    return this.http.post("http://localhost:8000/delete",dataToDelete)
+  }
 }
